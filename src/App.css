@@ -1,0 +1,13 @@
+html {
+    font-size : 14px;
+}
+
+*{
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+@font-face {
+    font-family: Iranian Sans;
+    src : url(./fonts/Iranian Sans.ttf)
+}

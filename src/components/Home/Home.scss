@@ -1,0 +1,65 @@
+@media screen and (max-width: 700px){
+  .responsive-images{
+    max-width: 400px !important;
+
+  }
+}
+
+@media screen and (max-width: 486px){
+  .responsive-images{
+    max-width: 300px !important;
+
+  }
+}
+@media screen and (max-width: 1145px)  {
+  div.center{
+    width: 60% !important;
+  }
+}
+@media screen and (max-width: 770px) {
+  div.center {
+    width: 70% !important; } }
+
+@media screen and (max-width: 400px) {
+  div.center {
+    width: 90% !important; }
+  button.keiketoBesaz-button {
+    font-size: .7rem;
+  }
+}
+
+
+.center {
+  width: 40% !important;
+  //margin-top: 5%;
+  margin-bottom: 5%;
+  //box-shadow: 2px 2px 5px 4px rgba(0, 0, 0, 0.2);
+  //background-color: #fff;
+  border-radius: 3px; }
+
+.web-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-image: url(../../assets/WebBG.svg);
+}
+.responsive-images {
+  width: 100%;
+  max-width: 500px;
+  height: auto; }
+
+.keiketoBesaz-button{
+  background-color: #f22c4b !important;
+  font-family: "Iranian Sans";
+  width: 50%;
+  border-radius: 19px !important;
+  &:hover{
+    background-color: #fff !important;
+    color: #f22c4b !important;
+  }
+
+}
