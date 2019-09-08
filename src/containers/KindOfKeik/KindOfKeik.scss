@@ -1,0 +1,19 @@
+.CenterForKind {
+  width: 80% !important;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+
+
+.kindOfKeik-button{
+  background-color: #f22c4b !important;
+  font-family: "Iranian Sans";
+  width: 50%;
+  border-radius: 19px !important;
+  &:hover{
+    background-color: #fff !important;
+    color: #f22c4b !important;
+  }
+
+}
