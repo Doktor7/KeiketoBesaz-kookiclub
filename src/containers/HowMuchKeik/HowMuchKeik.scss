@@ -1,0 +1,38 @@
+.forHowMany{
+  height: auto;
+  background-color:#f6dad4;
+  color: black;
+  width: 60%;
+  padding-top: 8px;
+  vertical-align: middle;
+  font-family: "Iranian Sans";
+  text-align: center;
+  border-radius: 26px;
+  font-weight: bold;
+}
+div.Dropdown-root,
+div.Dropdown-control,
+div.Dropdown-menu,
+div.Dropdown-option.is-selected{
+  background-color: #f22c4b;
+  text-align: center;
+  direction: rtl;
+  border: none;
+  color: white;
+  font-family: "Iranian Sans";
+  font-weight: 400;
+
+
+  //border-radius: 26px;
+}
+
+div.Dropdown-option{
+  &:hover{
+    color: #f22c4b;
+    background-color: white;
+  }
+}
+div.Dropdown-root,
+div.Dropdown-control{
+  //border-radius: 26px;
+}
