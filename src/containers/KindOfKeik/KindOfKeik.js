@@ -11,15 +11,16 @@ class KindOfKeikContainer extends Component {
     };
 
     hadnleChange = (event) => {
-        const name = event.target.name;
         const value = event.target.value;
-        this.setState(prevState => {
-            const newState = {...prevState};
-            newState[name] = value;
-            return newState;
-        });
-        // console.log(this.state)
-        localStorage.setItem("kind", this.state.kind);
+        // this.setState(prevState => {
+        //     const newState = {...prevState};
+        //     newState[name] = value;
+        //     return newState;
+        // }, () => {localStorage.setItem("kind", this.state.kind);console.log(this.state)});
+        localStorage.setItem("kind", value)
+
+        // this.props.history.push(`/choosenkeik/`);
+
 
     };
 
@@ -33,13 +34,13 @@ class KindOfKeikContainer extends Component {
                     <div className="d-flex w-100 justify-content-center align-items-center">
                 <div className="container CenterForKind">
                     <div className="row justify-content-center">
-                        {/*<form className="w-100" onSubmit={event => this.handleSubmit(event,this.state)}>*/}
+                        <form className="w-100" onSubmit={() => {this.props.history.push(`/choosenkeik/`)}}>
                             <div className="col-sm-6">
                                 <div className="">
                                     <img alt ={"Keiketo Besaz"} src={Cream} className="m-auto"/>
                                 </div>
                                 <div className="row justify-content-center">
-                                    <Button onClick={this.hadnleChange} name={"kind"} value = "cream"  className = "kindOfKeik-button" variant={"danger"}>خامه ای</Button>
+                                    <Button onClick={this.hadnleChange} type="submit" name={"kind"} value = "Cream"  className = "kindOfKeik-button" variant={"danger"}>خامه ای</Button>
                                 </div>
                             </div>
                             <div className="col-sm-6 ">
@@ -47,10 +48,10 @@ class KindOfKeikContainer extends Component {
                                     <img alt ={"Keiketo Besaz"} src={Fondant} className=""/>
                                 </div>
                                 <div className="row justify-content-center">
-                                    <Button onClick={this.hadnleChange} name={"kind"} value = "fondant"  className = "kindOfKeik-button" variant={"danger"}>فوندانت</Button>
+                                    <Button  onClick={this.hadnleChange} type="submit" name={"kind"} value = "Fondant"  className = "kindOfKeik-button" variant={"danger"}>فوندانت</Button>
                                 </div>
                             </div>
-                        {/*</form>*/}
+                        </form>
                     </div>
                 </div>
                     </div>
