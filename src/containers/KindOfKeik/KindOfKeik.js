@@ -30,30 +30,30 @@ class KindOfKeikContainer extends Component {
             <div >
                 <div className="web-background"></div>
                 <NavbarComponent />
-                <div className="d-flex h-100">
+                <div className="d-flex vh-100">
                     <div className="d-flex w-100 justify-content-center align-items-center">
-                <div className="container CenterForKind">
-                    <div className="row justify-content-center">
-                        <form className="w-100" onSubmit={() => {this.props.history.push(`/choosenkeik/`)}}>
-                            <div className="col-sm-6">
-                                <div className="">
-                                    <img alt ={"Keiketo Besaz"} src={Cream} className="m-auto"/>
-                                </div>
-                                <div className="row justify-content-center">
-                                    <Button onClick={this.hadnleChange} type="submit" name={"kind"} value = "Cream"  className = "kindOfKeik-button" variant={"danger"}>خامه ای</Button>
-                                </div>
-                            </div>
-                            <div className="col-sm-6 ">
-                                <div className="">
-                                    <img alt ={"Keiketo Besaz"} src={Fondant} className=""/>
-                                </div>
-                                <div className="row justify-content-center">
-                                    <Button  onClick={this.hadnleChange} type="submit" name={"kind"} value = "Fondant"  className = "kindOfKeik-button" variant={"danger"}>فوندانت</Button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+                        <div className="container CenterForKind">
+                            <form className="row justify-content-center" onSubmit={() => {this.props.history.push(`/choosenkeik/`)}}>
+                                {/*<form className="w-100" onSubmit={() => {this.props.history.push(`/choosenkeik/`)}}>*/}
+                                    <div className="col-sm-6">
+                                        <div className="">
+                                            <img alt ={"Keiketo Besaz"} src={Cream} className="m-auto"/>
+                                        </div>
+                                        <div className="row justify-content-center">
+                                            <Button onClick={this.hadnleChange} type="submit" name={"kind"} value = "Cream"  className = "kindOfKeik-button" variant={"danger"}>خامه ای</Button>
+                                        </div>
+                                    </div>
+                                    <div className="col-sm-6 ">
+                                        <div className="">
+                                            <img alt ={"Keiketo Besaz"} src={Fondant} className=""/>
+                                        </div>
+                                        <div className="row justify-content-center">
+                                            <Button  onClick={this.hadnleChange} type="submit" name={"kind"} value = "Fondant"  className = "kindOfKeik-button" variant={"danger"}>فوندانت</Button>
+                                        </div>
+                                    </div>
+                                {/*</form>*/}
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
