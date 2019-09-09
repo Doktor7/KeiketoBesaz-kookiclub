@@ -6,6 +6,7 @@ import KindOfKeikContainer from "./containers/KindOfKeik/KindOfKeik";
 import ChoosenKeikContainer from "./containers/ChoosenKeik/ChoosenKeik";
 import HowMuchKeikContainer from "./containers/HowMuchKeik/HowMuchKeik";
 import FloorsContainer from "./containers/Floors/Floors";
+import ShapeContainer from "./containers/Shape/Shape";
 class App extends Component {
 
   render(){
@@ -19,6 +20,7 @@ class App extends Component {
             <Route exact path = "/choosenkeik" component={ChoosenKeikContainer}></Route>
             <Route path="/howmuchkeik" component={HowMuchKeikContainer}></Route>
             <Route path="/floors" component = {FloorsContainer}></Route>
+            <Route path="/shape" component = {ShapeContainer}></Route>
           </Switch>
         </div>
       </Router>
